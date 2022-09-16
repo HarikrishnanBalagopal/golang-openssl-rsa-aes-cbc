@@ -1,0 +1,20 @@
+type: workload
+auths:
+  us.icr.io:
+    password: asdf1234
+    username: john
+  quay.io:
+    password: pass1234
+    username: john
+compose:
+  archive: H4sIANn+ImMAA+3QzU7DMAwH8J55imj3QT6dtSdexUkcqKB0agaCt6frrojTNDj8fwc7VqzESZnziyz7PE/Hucn9F0+v3bXpFXm/5Ui0ZW0v9ba01BnvjA4xrrHTxgUTO6WvPskP3tuJF6XWLMtvfWtbrbcY6LbWV3+MWdpwp9QiZWxvcxFtzqVS48RPMqjmev35sO0+tme2gYaSPEVOIQeXikilEMlyDM6LpSo59Z51teaQijtwLVY4sWGKOvtok9mOP87LqV1uUmqvduRiP5zD7q9/BQAAAAAAAAAAAAAAAAAAAAAA4P/7BkLWqkMAKAAA
+images:
+  dct:
+    us.icr.io/mynamespace/my-haproxy:
+      notary: "https://notary.us.icr.io"
+      publicKey: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJpRENDQVM2Z0F3SUJBZ0lSQUxCMXBPYlpEQlRRc09GSFlxazMzaWd3Q2dZSUtvWkl6ajBFQXdJd0tqRW8KTUNZR0ExVUVBeE1mZFhNdWFXTnlMbWx2TDNCeVlXSm9ZWFF4TWpNdmJYa3RhR0Z3Y205NGVUQWVGdzB5TWpBMApNVE14TURFd01ETmFGdzB6TWpBME1UQXhNREV3TUROYU1Db3hLREFtQmdOVkJBTVRIM1Z6TG1samNpNXBieTl3CmNtRmlhR0YwTVRJekwyMTVMV2hoY0hKdmVIa3dXVEFUQmdjcWhrak9QUUlCQmdncWhrak9QUU1CQndOQ0FBU1AKWGsrelE2MlFZNjI3MWQ1cTBMZHY3SGc3QzZkMGZOUlRsQmJXekhOWWFDZzlpU0piYnVNdjVBY0JmMjlqQi83eApqYzhzVitxMksyemtkTHV4QWxGWm96VXdNekFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJCkt3WUJCUVVIQXdNd0RBWURWUjBUQVFIL0JBSXdBREFLQmdncWhrak9QUVFEQWdOSUFEQkZBaUIzd0JTa0IxaXAKZHZZYlBMbFBmS3RZT0hsYnZzUllKa0FZM2hnY0xuNWhwQUloQUt6cmhsU3p4K1I5bmdtMTBlZVkyaFNCRmgrawpMWHp6SFkwaktTVzhyM1FhCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+volumes:
+  test:
+    filesystem: ext4
+    mount: /mnt/data
+    seed: workload phrase
